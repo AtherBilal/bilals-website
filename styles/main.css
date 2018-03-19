@@ -1,0 +1,68 @@
+/******************* HEADER STYLES *****************/
+
+#header {
+  background-image: url('../images/logo.png');
+  height: 25vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+button {
+  width: 100%;
+}
+
+
+/******************* CONTENT STYLES *****************/
+
+#home-image {
+  width: 80%;
+}
+#content {
+  text-align: center;
+}
+
+.slide-in {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  width: 80%;
+  max-height: 768px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+input {
+  width: 100%;
+}
+input[type="radio"]{
+  width: 25%;
+}
+.ui-state-default{
+  color:black
+}
+#ui-datepicker-div {
+  background-color: grey;
+}
+.ui-datepicker .ui-widget-content {
+    background: #000 none;
+}
+/******************* HEADER STYLES *****************/
+
+#footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  text-align: center;
+}

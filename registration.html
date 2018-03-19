@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Bilal Ather</title>
+      <meta name="author" content="name">
+      <meta name="description" content="description here">
+      <meta name="keywords" content="keywords,here">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+      <link rel="stylesheet" href="./styles/main.css" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   </head>
+   <body>
+      <div id="main-container" class="container">
+         <div id="header" class="container">
+         </div>
+         <div id="menu-row" class="row">
+            <div id="menu-sizing" class="col-sm-3 col-md-3">
+               <a href="./home.html"><button id="home-button" type="button" class="btn btn-primary">Home</button></a>
+               <a href="./registration.html"><button id="registration-button" type="button" class="btn btn-primary">Registration</button></a>
+               <a href="./animations.html"><button id="animations-button" type="button" class="btn btn-primary">Animations</button></a>
+            </div>
+            <div id="content-sizing" class="col-sm-9 col-md-9">
+               <div id="content" class="row">
+                  <div id="desktop-group-middle" class="col-sm-12 col-md-8">
+                     <h1 id="registration-header__content">Registration</h1>
+                      <form class="register" onsubmit="submitRegistration()">
+                       <label for="username">Username</label>
+                       <input type="text" name="username" id="username" maxlength="50" required><br>
+                       <label for="password">Password</label>
+                       <input type="password" name="password" id="password" maxlength="50" required><br>
+                       <label for="repeat-password">Repeat Password</label>
+                       <input type="password" name="repeat-password" id="repeat-password" maxlength="50" required><br>
+                       <label for="first-name">First Name</label>
+                       <input type="text" name="first-name" id="first-name" maxlength="50" required><br>
+                       <label for="last-name">Last Name</label>
+                       <input type="text" name="last-name" id="last-name" maxlength="50" required><br>
+                       <label for="address-one">Address Line 1</label>
+                       <input type="text" name="address-one" id="address-one" maxlength="100" required><br>
+                       <label for="address-two">Address Line 2</label>
+                       <input type="text" name="address-two" id="address-two" maxlength="100"><br>
+                       <label for="city">City</label>
+                       <input type="text" name="city" id="city" required><br>
+                       <fieldset>
+                          <label for="state">State</label>
+                          <select id="state" name="state" maxlength="50">
+                            <option value="---">---</option>
+                            <option value="AL">Alabama</option>
+                           	<option value="AK">Alaska</option>
+                           	<option value="AZ">Arizona</option>
+                           	<option value="AR">Arkansas</option>
+                           	<option value="CA">California</option>
+                           	<option value="CO">Colorado</option>
+                           	<option value="CT">Connecticut</option>
+                           	<option value="DE">Delaware</option>
+                           	<option value="DC">District of Columbia</option>
+                           	<option value="FL">Florida</option>
+                           	<option value="GA">Georgia</option>
+                           	<option value="HI">Hawaii</option>
+                           	<option value="ID">Idaho</option>
+                           	<option value="IL">Illinois</option>
+                           	<option value="IN">Indiana</option>
+                           	<option value="IA">Iowa</option>
+                           	<option value="KS">Kansas</option>
+                           	<option value="KY">Kentucky</option>
+                           	<option value="LA">Louisiana</option>
+                           	<option value="ME">Maine</option>
+                           	<option value="MD">Maryland</option>
+                           	<option value="MA">Massachusetts</option>
+                           	<option value="MI">Michigan</option>
+                           	<option value="MN">Minnesota</option>
+                           	<option value="MS">Mississippi</option>
+                           	<option value="MO">Missouri</option>
+                           	<option value="MT">Montana</option>
+                           	<option value="NE">Nebraska</option>
+                           	<option value="NV">Nevada</option>
+                           	<option value="NH">New Hampshire</option>
+                           	<option value="NJ">New Jersey</option>
+                           	<option value="NM">New Mexico</option>
+                           	<option value="NY">New York</option>
+                           	<option value="NC">North Carolina</option>
+                           	<option value="ND">North Dakota</option>
+                           	<option value="OH">Ohio</option>
+                           	<option value="OK">Oklahoma</option>
+                           	<option value="OR">Oregon</option>
+                           	<option value="PA">Pennsylvania</option>
+                           	<option value="RI">The State of Rhode Island and Providence Plantations</option>
+                           	<option value="SC">South Carolina</option>
+                           	<option value="SD">South Dakota</option>
+                           	<option value="TN">Tennessee</option>
+                           	<option value="TX">Texas</option>
+                           	<option value="UT">Utah</option>
+                           	<option value="VT">Vermont</option>
+                           	<option value="VA">Virginia</option>
+                           	<option value="WA">Washington</option>
+                           	<option value="WV">West Virginia</option>
+                           	<option value="WI">Wisconsin</option>
+                           	<option value="WY">Wyoming</option>
+                          </select>
+                       </fieldset>
+                     </form>
+                  </div>
+                  <div id="desktop-group-right" class="col-sm-8 col-md-4" style"background-color:green">
+                    <form class="register" onsubmit="submitRegistration()">
+                     <label for="zip-code">Zip Code</label>
+                     <input type="text" name="zip-code" id="zip-code" maxlength="10" placeholder="63021-1234" required><br>
+                     <label for="phone-number">Phone Number</label>
+                     <input id="telNo" name="telNo" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="416-723-9550" value="416-723-9550" required>
+                     <label for="email">E-Mail</label>
+                     <input type="email" name="email" id="email" required><br>
+                     <h3 id="gender-title__form">Gender</h3>
+                     <label for="male">Male</label>
+                     <input type="radio" name="gender" id="male" value="male" maxlength="50"><br>
+                     <label for="female">Female</label>
+                     <input type="radio" name="gender" id="female" value="female" maxlength="50"><br>
+                     <label for="other">Other</label>
+                     <input type="radio" name="gender" id="other" value="other" maxlength="50"><br>
+                     <h3 id="marital-status-title__form">Marital Status</h3>
+                     <label for="single">Single</label>
+                     <input type="radio" name="marital-status" id="single" value="single" maxlength="50"><br>
+                     <label for="married">Married</label>
+                     <input type="radio" name="marital-status" id=" married" value="married" maxlength="50"><br>
+                     <label for="dob">Date Of Birth</label>
+                     <input type="text" name="dob" id="dob"><br>
+                     <button id="submit-button" class="button" type="submit" onclick="submitRegistration()">Submit</button>
+                   </form>
+                   <button id="reset-button" class="button reset" type="reset" onclick="reset()">Reset</button>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="footer" class="container">
+            <div id="footer-row" class="row">
+               <div id="footer-col-1" class="col-md-4">
+                  <a href="https://www.google.com/" target="_blank">Google</a><br>
+                  <a href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+               </div>
+               <div id="footer-col-2" class="col-md-4">
+                  <a href="https://www.getbootstrap.com/" target="_blank">Bootstrap</a><br>
+                  <a href="https://www.amazon.com/" target="_blank">Amazon</a><br>
+               </div>
+               <div id="footer-col-3" class="col-md-4">
+                  <a href="https://www.twitter.com/" target="_blank">Twitter</a><br>
+                  <a href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="./javascript/main.js"></script>
+      <script type="text/javascript" src="./javascript/validation.js"></script>
+
+   </body>
+</html>
