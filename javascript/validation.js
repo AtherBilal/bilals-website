@@ -4,8 +4,6 @@ $( function() {
 
 
 function submitRegistration(){
-
-  //username
   var username = document.getElementById('username').value
   if (username.length < 6) {
     alert("Username must have at least 5 characters")
@@ -15,7 +13,7 @@ function submitRegistration(){
   var password = document.getElementById('password').value
   var passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/
   if(!passwordRegex.test(password)){
-    alert("Password must be 8 characters with 1 uppercase, 1 lowercase and 1 number")
+    alert("Password must be 8 characters with 1 uppercase, 1 lowercase and 1 number and 1 special character")
   }
 
   //repeat password
